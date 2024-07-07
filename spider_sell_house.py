@@ -1,6 +1,6 @@
 # -*- Coding = UTF-8 -*-
 # Author: Nico
-# File: SellHouse.py
+# File: spider_sell_house.py
 # Software: PyCharm
 # Time: 2024/1/26 14:03
 
@@ -71,7 +71,6 @@ for page in range(1, 101):
         csv_write.writerow(dit)
         # 打印房源信息
         print(title, area, house_type, house_area, house_face, decoration, floor, years, follow_info, tag, totalprice, unitprice, href, sep='|')
-
 # 关闭CSV文件
 f.close()
-print("爬取完毕！")
+print('爬取完毕！')
