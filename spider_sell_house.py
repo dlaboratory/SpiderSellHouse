@@ -2,7 +2,8 @@
 # Author: Nico
 # File: spider_sell_house.py
 # Software: PyCharm
-# Time: 2024/1/26 14:03
+# Time: 2024/1/26 15:03
+
 
 import csv
 import time
@@ -10,12 +11,11 @@ import parsel
 import requests
 
 # 打开CSV文件，设置编码和换行符
-f = open('Data.csv', mode='a', encoding='utf-8-sig', newline='')
+f = open('data_sell_house.csv', mode='a', encoding='utf-8-sig', newline='')
 # 创建CSV写入对象
 csv_write = csv.DictWriter(f, fieldnames=['标题', '地址', '户型', '面积', '朝向', '装修', '楼层', '年代', '关注及发布', '其它', '总价', '单价', '详情'])
 # 写入CSV表头
 csv_write.writeheader()
-
 # 循环爬取1到100页的数据
 for page in range(1, 101):
     # 打印当前爬取页数
