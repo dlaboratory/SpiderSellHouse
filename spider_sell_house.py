@@ -10,6 +10,7 @@ import time
 import parsel
 import requests
 
+
 # 打开CSV文件，设置编码和换行符
 f = open('data_sell_house.csv', mode='a', encoding='utf-8-sig', newline='')
 # 创建CSV写入对象
